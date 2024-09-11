@@ -88,20 +88,52 @@
 
 <!-- About Me -->
                 <!-- About section, quick links -->
-                <button style="border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-aboutme" id="aboutme"><heading>About Me</heading></button>
-                <div id="content-aboutme" class="collapse in"></div>
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                    <tr style="padding:0px">
-                        <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <style>
-                    .justified-paragraph {
-                        text-align: justify;
-                        margin: 10; /* Remove any default margins */
-                        padding: 10; /* Remove any default padding */
-                    }
-                </style>
-                <p class="justified-paragraph">Hey there! I'm an experienced Data Science professional with a passion for leveraging advanced technologies like Data Mining, Data Visualization, Generative AI, Large Language Models (LLMs) and Machine Learning to solve real-world problems. I have a strong academic background complemented by over an year of industry experience. I'm eager to continue contributing to groundbreaking advancements in AI and Data Science. Lastly, I have a passion for sports and healthy living and I also love contributing to volunteer works.</p>
-
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>About Me</title>
+                    <style>
+                        .justified-paragraph {
+                            text-align: justify;
+                            margin: 0; /* Remove any default margins */
+                            padding: 0; /* Remove any default padding */
+                        }
+                        .collapsible-button {
+                            border: 0;
+                            background-color: transparent;
+                            outline: none;
+                            cursor: pointer;
+                            text-align: left;
+                            font-size: 16px; /* Adjust font size as needed */
+                            font-weight: bold; /* Make the title bold */
+                            display: block;
+                            width: 100%;
+                            padding: 10px; /* Add padding for better spacing */
+                        }
+                        .collapsible-button:focus {
+                            outline: none; /* Remove default focus outline */
+                        }
+                    </style>
+                </head>
+                <body>
+                    <!-- About Me Section -->
+                    <button type="button" class="collapsible-button" data-toggle="collapse" data-target="#content-aboutme" id="aboutme">
+                        About Me
+                    </button>
+                    <div id="content-aboutme" class="collapse in">
+                        <table style="width:100%; border:0; border-spacing:0; border-collapse:separate; margin: auto;">
+                            <tbody>
+                                <tr style="padding:0;">
+                                    <td style="padding:2.5%; width:100%; vertical-align:top;">
+                                        <p class="justified-paragraph">
+                                            Hey there! I'm an experienced Data Science professional with a passion for leveraging advanced technologies like Data Mining, Data Visualization, Generative AI, Large Language Models (LLMs), and Machine Learning to solve real-world problems. I have a strong academic background complemented by over a year of industry experience. I'm eager to continue contributing to groundbreaking advancements in AI and Data Science. Lastly, I have a passion for sports and healthy living, and I also love contributing to volunteer work.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </body>
                 <head>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
