@@ -131,6 +131,115 @@
                 </tbody></table>
                 </div>
                 <hr class="soft">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Graphic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .timeline-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #333;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-event {
+            padding: 10px 20px;
+            position: relative;
+            width: 50%;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .timeline-event:nth-child(odd) {
+            left: 0;
+        }
+        .timeline-event:nth-child(even) {
+            left: 50%;
+            text-align: right;
+        }
+        .timeline-event::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+        .timeline-event:nth-child(odd)::after {
+            left: 100%;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #f9f9f9 transparent transparent;
+        }
+        .timeline-event:nth-child(even)::after {
+            right: 100%;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #f9f9f9;
+        }
+        .timeline-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .timeline-subheader {
+            color: #555;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline-container">
+        <!-- Education Section -->
+        <div class="timeline-event">
+            <div class="timeline-header">Education</div>
+            <div class="timeline-subheader">August 2023 - December 2024</div>
+            Masters UB
+        </div>
+        <div class="timeline-event">
+            <div class="timeline-subheader">August 2018 - August 2022</div>
+            Under Grad
+        </div>
+        
+        <!-- Experience Section -->
+        <div class="timeline-event">
+            <div class="timeline-header">Experience</div>
+            <div class="timeline-subheader">August 2024 - Present</div>
+            Research Assistant
+        </div>
+        <div class="timeline-event">
+            <div class="timeline-subheader">June 2024 - July 2024</div>
+            Research Assistant
+        </div>
+        <div class="timeline-event">
+            <div class="timeline-subheader">May 2022 - April 2023</div>
+            Data Scientist/Analyst
+        </div>
+        <div class="timeline-event">
+            <div class="timeline-subheader">January 2022 - April 2022</div>
+            IT Support Executive
+        </div>
+        <div class="timeline-event">
+            <div class="timeline-subheader">August 2021 - November 2021</div>
+            Software Development Intern
+        </div>
+    </div>
+</body>
+
+
+        
 <!-- News -->
 
                 <!-- <br> -->
