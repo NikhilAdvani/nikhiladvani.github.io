@@ -658,7 +658,36 @@
                         Implemented intelligent task delegation between agents for web search and financial analysis, resulting in a 40% faster end-to-end research workflow
                     </p>
                 </td>
-            </tr>    
+            </tr>   
+
+	 <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="one">
+                        <img src='images/Financial_Agent.png' width="180">
+                    </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                    <papertitle><big>Domain Name Suggester with LLM Fine-Tuning</papertitle></big>
+                    <br>
+                    <p><em>LoRA, LLM-as-Judge, FastAPI, Uvicorn, Colab Notebook <a href="https://github.com/NikhilAdvani/domain-name-suggester" target="_blank">[code]</a></em></p>
+                    <p>
+                        <span>&#8226;</span> 
+                        End‑to‑End Synthetic Data Pipeline: Used Python (itertools, pandas) to generate a 1000‑row business‐description dataset and then augmented it via OpenAI’s GPT‑3.5‑turbo (paraphrasing) plus custom synonym replacements
+                        <br>
+                        <span>&#8226;</span>
+                        Adapter‑Based LoRA Fine‑Tuning: Leveraged PyTorch, 🤗 Transformers, bitsandbytes (8‑bit quantization) and PEFT (LoraConfig) to efficiently tune a Llama‑3.1‑8b‑Instruct model on both original (500 rows) and augmented (1500 rows) datasets, achieving validation perplexity improvements from ~2.40 to ~1.50
+                        <br>
+                        <span>&#8226;</span>
+                        Hyperparameter Grid Search: Executed manual grid search over LoRA rank, alpha, dropout, and learning rate within the Trainer API to identify the best configuration (r=8, α=8, dropout=0.0, lr=3e‑4)
+                        <br>
+                        <span>&#8226;</span>
+                        Automated Quality & Edge‑Case Evaluation: Built an “LLM‑as‑Judge” framework calling OpenAI’s GPT‑4 via the ChatCompletion API to score suggestions on relevance, brevity, memorability, and brandability; ran 210+ edge‑cases (empty, long, non‑English, emojis, numeric, inappropriate) and computed failure rates
+			<br>
+                        <span>&#8226;</span>
+                        Safety & Deployment: Implemented regex‑based content filtering in Python to block harmful inputs (>95% accuracy) and wrapped the final PeftModel in a FastAPI + Uvicorn server for real‑time inference
+                    </p>
+                </td>
+            </tr>   
 
 	    <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
